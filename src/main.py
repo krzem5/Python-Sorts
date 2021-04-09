@@ -61,18 +61,18 @@ if __name__=="__main__":
 	import time
 	l=[randint(0,5000) for _ in range(5000)]
 	ts=time.time()
-	bl=bubble_sort(l[:])
+	bubble_sort(l[:])
 	tbs=time.time()-ts
 	ts=time.time()
-	il=insertion_sort(l[:])
+	insertion_sort(l[:])
 	tis=time.time()-ts
 	ts=time.time()
-	sl=selection_sort(l[:])
+	selection_sort(l[:])
 	tss=time.time()-ts
 	ts=time.time()
-	ml=merge_sort(l[:])
+	merge_sort(l[:])
 	tms=time.time()-ts
 	ts=time.time()
-	ql=quick_sort(l[:])
+	quick_sort(l[:])
 	tqs=time.time()-ts
 	print(f"Bubble sort:\t~{tbs} s\n\nInsertion sort:\t~{tis} s\n\nSelection sort:\t~{tss} s\n\nMerge sort:\t\t~{tms} s\n\nQuick sort:\t\t~{tqs} s")
